@@ -1,13 +1,64 @@
+draw_config:
+  dark_mode: auto
+  separate_combo_diagrams: true
 parse_config:
+  modifier_fn_map:
+    left_ctrl: "^"
+    right_ctrl: "^"
+    left_shift: "⇧"
+    right_shift: "⇧"
+    left_alt: "⌥"
+    right_alt: "⌥"
+    left_gui: "⌘"
+    right_gui: "⌘"
   zmk_remove_keycode_prefix: ["DE_"]
   raw_binding_map:
     "&td0": "1x:ALT 2x:WIN"
+    "&sys_reset": "RESET"
+    "&bootloader": "BOOT"
+    "&studio_unlock": "STUDIO"
   zmk_keycode_map:
     # Custom for this repo
     A_UMLAUT: "Ä"
     O_UMLAUT: "Ö"
     U_UMLAUT: "Ü"
     SZ: "ß"
+    LC(DE_SPACE): "🌐︎"
+    # Common
+    SPACE: "␣"
+    GUI: "⌘"
+    LGUI: "⌘"
+    RGUI: "⌘"
+    LALT: "⌥"
+    RALT: "⌥"
+    LSHIFT: "⇧"
+    LSHFT: "⇧"
+    RSHIFT: "⇧"
+    RSHFT: "⇧"
+    LCTRL: "^"
+    RCTRL: "^"
+    RET: "⮐"
+    ENTER: "⮐"
+    TAB: "⇥"
+    BACKSPACE: $$mdi:backspace-outline$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    C_PP: $$mdi:play-pause$$
+    C_STOP: $$mdi:stop$$
+    C_MUTE: $$mdi:volume-mute$$
+    C_PREV: $$mdi:skip-previous$$
+    C_NEXT: $$mdi:skip-next$$
+    C_VOL_DN: $$mdi:volume-minus$$
+    C_VOL_UP: $$mdi:volume-plus$$
+    C_BRI_DN: $$tabler:brightness-down$$
+    C_BRI_UP: $$tabler:brightness-up$$
+    K_VOL_DN: $$mdi:volume-minus$$
+    K_VOL_UP: $$mdi:volume-plus$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+    #LA(LEFT): "⌥+$$mdi:menu-left$$"
+    #LEFT_ARROW: $$mdi:menu-left$$
+    #DOWN: $$mdi:menu-down$$
+    #UP: $$mdi:menu-up$$
+    #RIGHT: $$mdi:menu-right$$
     # Defaults from https://github.com/caksoylar/keymap-drawer/blob/main/keymap_drawer/config.py#L420-L485
     EXCLAMATION: "!"
     EXCL: "!"
